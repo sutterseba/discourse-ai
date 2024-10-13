@@ -11,6 +11,7 @@ module DiscourseAi
 
         ## Report Guidelines:
 
+        - Language: Report in German (technical terms can stay in English where applicable).
         - Length & Style: Aim for 12 dense paragraphs in a narrative style, focusing on internal forum discussions.
         - Accuracy: Only include verified information with no embellishments.
         - Sourcing: ALWAYS Back statements with links to forum discussions.

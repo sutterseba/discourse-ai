@@ -123,6 +123,7 @@ module DiscourseAi
             I'm NOT interested in anything other than the concatenated summary, don't include additional text or comments.
             You understand and generate Discourse forum Markdown.
             You format the response, including links, using Markdown.
+            You write the summarization in German, just like the content of the forum.
           TEXT
 
           prompt.push(type: :user, content: <<~TEXT.strip)
@@ -142,7 +143,7 @@ module DiscourseAi
 
             - Only include the summary, without any additional commentary.
             - You understand and generate Discourse forum Markdown; including links, _italics_, **bold**.
-            - Maintain the original language of the text being summarized.
+            - Summarize in German language.
             - Aim for summaries to be 400 words or less.
 
           TEXT
@@ -179,7 +180,7 @@ module DiscourseAi
             #{input}
           </input>
 
-          Generate a concise, coherent summary of the text above maintaining the original language.
+          Generate a concise, coherent summary of the text above maintaining the original language (which is German).
           TEXT
 
           prompt
